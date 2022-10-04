@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {background-image: url("background.jpg");}
+        * {box-sizing: border-box;}
+
+        h1, h3{
+            margin-top: 100px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2{
+            margin-top: 70px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #777284;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px;
+            width: 60%;
+            margin-left: 180px;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Site navigation menu -->
+        <ul class="navbar">
+            <li><a href="MyWebsite.html">Main page</a>
+            <li><a href="art.html">Art</a>
+            <li><a href="videos.html">Podcasts and Videos</a>
+            <li><a href="find.html">Find your creative self</a></li>
+            <li><a href="about.html">About</a>
+            <li><a href="contact.html">Contact</a>
+        </ul>
+        <h2>Contact Form</h2>
+
+        <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+            <label for="favorite">Favorite hobby</label>
+            <select id="favorite" name="favorite">
+            <option value="painting">Painting</option>
+            <option value="drawing">Drawing</option>
+            <option value="Skiing">Skiing</option>
+            <option value="Dancing">Dancing</option>
+            <option value="Singing">Singing</option>
+            <option value="Sculpture">Sculpture</option>
+            <option value="Movie">Watch movies</option> 
+            <option value="Other">Other</option>
+        </select>
+
+            <label for="signup">Why you would like to sign up</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+
+    </body>
+</html>
